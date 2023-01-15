@@ -7,7 +7,9 @@ let guessField = document.querySelector(".guessField");
 let guessCount = 1;
 let resetButton;
 
-function checkGuess() {
+function checkGuess(event) {
+  event.preventDefault();
+
   let userGuess = Number(guessField.value);
   if (guessCount === 1) {
     guesses.textContent = "Anda Memasukan : ";
