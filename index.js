@@ -1,7 +1,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let guesses = document.querySelector(".guesses");
 let lastResult = document.querySelector(".lastResult");
-let lowOrHi = document.querySelector(".lowOrHi");
+let lowOrHigh = document.querySelector(".lowOrHigh");
 let guessSubmit = document.querySelector(".guessSubmit");
 let guessField = document.querySelector(".guessField");
 let guessCount = 1;
@@ -18,19 +18,19 @@ function checkGuess() {
   if (userGuess === randomNumber) {
     lastResult.textContent = "SELAMAT! Tebakan Anda Benar!";
     lastResult.style.backgroundColor = "green";
-    lowOrHi.textContent = "";
+    lowOrHigh.textContent = "";
     setGameOver();
   } else if (guessCount === 3) {
     lastResult.textContent = "Yahh kamu gagal terus nih. Ayo coba lagi!";
-    lowOrHi.textContent = "";
+    lowOrHigh.textContent = "";
     setGameOver();
   } else {
     lastResult.textContent = "Ups Salah!";
     lastResult.style.backgroundColor = "red";
     if (userGuess < randomNumber) {
-      lowOrHi.textContent = "Angka yang anda masukan Terlalu Rendah!";
+      lowOrHigh.textContent = "Angka yang anda masukan Terlalu Rendah!";
     } else if (userGuess > randomNumber) {
-      lowOrHi.textContent = "Angka yang anda masukan Terlalu Tinggi!";
+      lowOrHigh.textContent = "Angka yang anda masukan Terlalu Tinggi!";
     }
   }
 

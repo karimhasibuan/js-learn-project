@@ -9,18 +9,25 @@
   <body>
     <h1>Bermain Tebak Angka</h1>
     <p>
-      Anda diberikan 3x kesempatan untuk menebak angka. Jika tebakan angka terlalu <strong>tinggi atau rendah</strong> akan di beritahukan
-      dan jika <strong>Benar</strong> akan muncul pemberitahuannya juga tentunya.
+      Anda diberikan 3x kesempatan untuk menebak angka. Jika tebakan angka
+      terlalu <strong>tinggi atau rendah</strong> akan di beritahukan dan jika
+      <strong>Benar</strong> akan muncul pemberitahuannya juga tentunya.
     </p>
-    <div class="form">
-      <label for="guessField">Masukan Nomor yang anda pilih <strong>1-100</strong>: </label
-      ><input type="text" id="guessField" class="guessField" /> <input type="submit" value="Pilih" class="guessSubmit" />
-    </div>
+
+    <form class="form">
+      <label for="guessField">
+        Masukan Nomor yang anda pilih <strong>1-100</strong>:
+      </label>
+      <input type="text" id="guessField" class="guessField" />
+      <input type="submit" value="Pilih" class="guessSubmit" />
+    </form>
+
     <div class="resultSection">
       <p class="guesses"></p>
       <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
+      <p class="lowOrHigh"></p>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
