@@ -51,9 +51,9 @@ function setGameOver() {
 
 function resetGame() {
   guessCount = 1;
-  let resetParas = document.querySelectorAll(".resultParas p");
-  for (let i = 0; i < resetParas.length; i++) {
-    resetParas[i].textContent = "";
+  let resetSession = document.querySelectorAll(".resultSection p");
+  for (let i = 0; i < resetSession.length; i++) {
+    resetSession[i].textContent = "";
   }
 
   resetButton.parentNode.removeChild(resetButton);
