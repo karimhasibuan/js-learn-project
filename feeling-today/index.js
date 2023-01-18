@@ -1,6 +1,6 @@
-const feelInput = document.getElementById("feelInput");
-
 function feel() {
+  const feelInput = document.getElementById("feelInput");
+
   if (feelInput.value == "bad") {
     alert("Hopefully tomorrow your day can be better. Spirit.!");
   }
